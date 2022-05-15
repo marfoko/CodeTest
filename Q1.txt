@@ -1,0 +1,7 @@
+To activate and deactivate a purely resistive load, i'd use PWM
+techniques  for power modulation. If is avalible an microcontroler with and
+peripheral PWM, it would be better, since you don't need to use CPU power to control it.
+
+For and inductive load, it's necessary to add an proporcional capacitor, to prevent overvontage
+due the high dV/dt on inductor. It will be acting as an filter, like the ones found on
+an DC DC swithcing converter.
